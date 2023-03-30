@@ -1,0 +1,162 @@
+.column{
+	display: none;
+}
+@media only screen and (max-width: 600px){
+	.column{
+		display: block;
+		font-family: arial;
+	}
+	.row1, .row2, .subcol2, .swipe, .popup{
+		display: flex;
+	}
+	.row1{
+		justify-content: space-evenly;
+		align-items: center;
+		margin-top: 30px;
+		gap:50px;
+	}
+	.bp{
+		position: relative;
+		border: 1px solid grey;
+		border-radius: 5px;
+		width: 36px;
+		height: 30px;
+		text-align: center;
+	}
+	.circle{
+		position: absolute;
+		top:-9px;
+		right: 26px;
+		border: 1px solid black;
+		background: black;
+		color: white;
+		border-radius: 15px;
+		height: 15px;
+		width: 15px;
+		text-align: center;
+		font-size: 10px;
+		font-weight: bold;
+	}
+	button{
+		background: white;
+		border-radius: 5px;
+		width: 36px;
+		height: 30px;
+	}
+	.row2{
+		justify-content: space-around;
+		gap:200px;
+	}
+	.uk{
+		border: 1px solid gray;
+		border-radius: 10px;
+		width: 60px;
+		height: 40px;
+		text-align: center;
+		margin-top: 20px;
+	}
+	.subrow1, .cred, .cviolet{
+		border: 1px solid gray;
+		border-radius: 15px;
+		width: 40px;
+		height: 40px;
+		text-align: center;
+	}
+	.subrow1 img, .subrow2 img{
+		margin-top: 10px;
+	}
+	.cviolet{
+		margin-top: 20px;
+	}
+	.uk:hover, .cl:hover {
+		border: 2px solid black;
+	}
+	.row2{
+		margin-top: 80px;
+	}
+	.subcol2{
+		margin-top: 35px;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.subrow1:hover {
+		background-color: gray;
+	}
+	.size{
+		font-weight: bold;
+	}
+	.row3{
+		margin-left: 15px;
+	}
+	.precio{
+		font-size: 30px;
+		font-weight: bold;
+	}
+	.porcent{
+		font-size: 15px;
+		margin-top: -45px;
+		color: red;
+		margin-left: 11px;
+	}
+	.popup{
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		animation-name: sale;
+		animation-duration: 2s;
+	}
+	.swipe{
+		border-radius: 30px;
+		background: black;
+		width: 45px;
+		height: 100px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		animation-name: sale;
+		animation-duration: 5s;
+		position: absolute;
+		top:360px;
+	}
+	.tenis{
+		position: absolute;
+		width: 340px;
+		animation-name: sale;
+		animation-duration: 5s;
+		z-index: -1;
+	}
+	.txtswipe{
+		position: absolute;
+		top:310px;
+		animation-name: sale;
+		animation-duration: 5s;
+		font-size: 15px;
+	}
+
+	@keyframes sale {
+ 		from {
+    	margin-top: 300px;
+    	width: 10px;
+ 	 	}	
+	}
+	@keyframes salebox {
+		from {
+			margin-top: 200px;
+		}
+	}
+	.box{
+		animation-name: salebox;
+		animation-duration: 1s;
+	}
+	.nike{
+		z-index: -1;
+	}
+
+
+	.tenis img, .box img, .nike img{
+		width: 100%;
+	}
+	div{
+		border:1px solid black;
+	}
+}
